@@ -1,5 +1,10 @@
 import React from "react";
-import cardsimg from "../images/cardsimg.jpg";
+import domainimg from "../images/domimg.png";
+import skillimg from "../images/skillimg.png";
+import coreimg from "../images/corimg.png";
+import programimg from "../images/proimg.png";
+import otherimg from "../images/otherimg.png";
+import Assessmentimg from "../images/Assesmentimg.png"
 import { Link } from "react-router-dom";
 
 function Cards() {
@@ -9,13 +14,12 @@ function Cards() {
         <div className="flip-card">
           <div className="flip-card-inner">
             <div className="flip-card-front">
-              <img src={cardsimg} alt="Avatar" height={200} width={280} />
-              <h3 className="first-txt">Domain Courses</h3>
+              <img src={domainimg} className="card-img" alt="Avatar" height={200} width={280} />
             </div>
             <div className="flip-card-back">
               
-              <h3 className="first-txt">Domain Courses</h3>
-              <p className="first-para"> Read all about our domain courses</p>
+              <h4 className="first-txt">Domain Courses</h4>
+              <p className="first-para">Domain Courses Details</p>
               <Link to="/domain">  <button type="button" className="card-btn btn btn-dark btn-lg">
                 Explore
               </button></Link>
@@ -25,30 +29,28 @@ function Cards() {
         <div className="flip-card">
           <div className="flip-card-inner">
             <div className="flip-card-front">
-              <img src={cardsimg} alt="Avatar" height={200} width={280} />
-              <h3 className="first-txt">Core Courses</h3>
+              <img src={coreimg} className="card-img" alt="Avatar" height={200} width={280} />
             </div>
             <div className="flip-card-back">
-             <h3 className="first-txt">Core Courses</h3>
-              <p className="first-para"> Read all about our core courses</p>
-              <button type="button" className="card-btn btn btn-dark btn-lg">
+             <h4 className="first-txt" style={{left:40}}>Core Courses</h4>
+              <p className="first-para">Core Courses Details</p>
+              <Link to="/core"><button type="button" className="card-btn btn btn-dark btn-lg">
                 Explore
-              </button>
+              </button></Link>
             </div>
           </div>
         </div>
         <div className="flip-card">
           <div className="flip-card-inner">
             <div className="flip-card-front">
-              <img src={cardsimg} alt="Avatar" height={200} width={280} />
-              <h3 className="first-txt ">Skill Courses</h3>
+              <img src={skillimg} className="card-img" alt="Avatar" height={200} width={280} />
             </div>
             <div className="flip-card-back">
-              <h3 className="first-txt">Skill Courses</h3>
-              <p className="first-para"> Read all about our skill courses</p>
-              <button type="button" className="card-btn btn btn-dark btn-lg">
+              <h4 className="first-txt">Skill Courses</h4>
+              <p className="first-para">Skill Courses Details</p>
+              <Link to="/skill"> <button type="button" className="card-btn btn btn-dark btn-lg">
                 Explore
-              </button>
+              </button></Link>
             </div>
           </div>
         </div>
@@ -61,13 +63,13 @@ function Cards() {
         <div className="flip-card">
           <div className="flip-card-inner">
             <div className="flip-card-front">
-              <img src={cardsimg} alt="Avatar" height={200} width={280} />
-              <h3 className="first-txt">Domain Courses</h3>
+              <img src={programimg} className="card-img" alt="Avatar" height={200} width={280} />
+      
             </div>
             <div className="flip-card-back">
               
-              <h3 className="first-txt">Domain Courses</h3>
-              <p className="first-para"> Read all about our domain courses</p>
+              <h4 className="first-txt">Programme Structure</h4>
+              <p className="first-para">Programms Details </p>
               <Link to="/domain">  <button type="button" className="card-btn btn btn-dark btn-lg">
                 Explore
               </button></Link>
@@ -77,12 +79,11 @@ function Cards() {
         <div className="flip-card">
           <div className="flip-card-inner">
             <div className="flip-card-front">
-              <img src={cardsimg} alt="Avatar" height={200} width={280} />
-              <h3 className="first-txt">Core Courses</h3>
+              <img src={Assessmentimg} alt="Avatar"className="card-img" height={200} width={280} />
             </div>
             <div className="flip-card-back">
-             <h3 className="first-txt">Core Courses</h3>
-              <p className="first-para"> Read all about our core courses</p>
+             <h4 className="first-txt">Assessment Criterion</h4>
+              <p className="first-para">Assessments Details</p>
               <button type="button" className="card-btn btn btn-dark btn-lg">
                 Explore
               </button>
@@ -92,12 +93,11 @@ function Cards() {
         <div className="flip-card">
           <div className="flip-card-inner">
             <div className="flip-card-front">
-              <img src={cardsimg} alt="Avatar" height={200} width={280} />
-              <h3 className="first-txt ">Skill Courses</h3>
+              <img src={otherimg} alt="Avatar"className="card-img"  height={200} width={280} />
             </div>
             <div className="flip-card-back">
-              <h3 className="first-txt">Skill Courses</h3>
-              <p className="first-para"> Read all about our skill courses</p>
+              <h4 className="first-txt">Other Information</h4>
+              <p className="first-para">Check Informations</p>
               <button type="button" className="card-btn btn btn-dark btn-lg">
                 Explore
               </button>

@@ -1,6 +1,14 @@
 import React from 'react'
 
+import { Link } from "react-router-dom";
+
 function Header() {
+
+const homestyle = {
+  textDecoration: 'none',
+  color: 'black'
+}
+
   return (
     <div className="header">
     <img className="header-image"
@@ -22,7 +30,7 @@ function Header() {
       </div>
     </div>
     <div className="teacher">
-      <span>| <a href="/">TEACHERS</a> </span>
+      <span>| <a href="/" style={homestyle}><Link to="/Teacher">TEACHER</Link></a> </span>
     </div>
     </div>
    
